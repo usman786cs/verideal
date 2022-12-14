@@ -1,0 +1,83 @@
+//
+//  Verideal UI Design
+//  _____________________________________________
+
+.catalog-product-view {
+    .product-info-main {
+        .verideal-button-container,
+        #instant-purchase
+        {
+            display: inline-block;
+        }
+        .pdp-action-secondary {
+            display: inline-block;
+            width: 220px;
+            background-color: #0a8f1c;
+            height: 52px;
+            outline: unset;
+            box-shadow: unset;
+            img {
+                width: 58%;
+            }
+        }
+    }
+}
+
+
+//
+//  Mobile (styles-m.css)
+//  ___________________________________________     __
+
+& when (@media-target = 'mobile'), (@media-target = 'all') {
+    @media screen and (max-width: 1024px) {
+        .catalog-product-view .product-info-main {
+            .verideal-button-container,
+            .pdp-action-secondary {
+                width: 100%;
+            }
+            .pdp-action-secondary img {
+                width: 100px
+            }
+            .box-tocart .action.tocart:not(:last-child) {
+                margin-bottom: 0;
+            }
+            .verideal-button-container {
+                margin-bottom: 15px;
+            }
+            #main-verideal-image-container {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+//
+//  Desktop (styles-m.css)
+//  ___________________________________________     __
+& when (@media-target = 'desktop'), (@media-target = 'all') {
+    @media screen and (max-width: 1180px) {
+        .catalog-product-view .product-info-main {
+            .verideal-button-container,
+            .pdp-action-secondary {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+            .pdp-action-secondary img {
+                width: 120px
+            }
+            .box-tocart .action.tocart:not(:last-child) {
+                margin-bottom: 0;
+                width: 100%;
+            }
+            .verideal-button-container {
+                width: 100%;
+                padding-bottom: 15px;
+            }
+            #main-verideal-image-container {
+                text-align: center;
+            }
+        }
+    }
+}

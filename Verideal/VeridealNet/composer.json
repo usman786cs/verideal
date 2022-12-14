@@ -1,0 +1,23 @@
+{
+    "name": "verideal/module-veridealnet",
+    "description": "Verideal Net Api Plugin",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "M. Usman",
+            "email": "usman.786cs@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Verideal\\VeridealNet\\": ""
+        }
+    }
+}
